@@ -1,0 +1,31 @@
+body{
+background-color: rgb(159, 158, 158);
+
+}
+#Galeria img{ 
+    width: 100%;
+
+    
+
+}
+#Galeria .col-lg-3{
+
+margin-bottom: 0;
+padding: 25px;
+
+
+
+}
+
+#Galeria img:hover {
+
+border: 5px solid grey;
+
+
+}
+img {
+    max-height: 300px; /* establece una altura máxima de 200 píxeles */
+    vertical-align: middle; /* centra verticalmente las imágenes */
+}
+
+

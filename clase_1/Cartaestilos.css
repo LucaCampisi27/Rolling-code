@@ -1,0 +1,56 @@
+
+header{
+background-color: bisque;
+text-align: center;
+text-decoration: underline;
+
+}
+nav{
+text-align: center;
+
+}
+main{
+background-color: burlywood;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+li span.price {
+    margin-left: 40px;
+}
+.decoracion{
+
+background-image: url(https://static.eldiario.es/clip/c582f7f0-0466-4175-8be9-0ad06c1113a1_16-9-discover-aspect-ratio_default_0.jpg);
+background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semitransparente */
+  background-blend-mode: lighten; /* Mezcla el color de fondo con la imagen de fondo */
+  color: #000; /* Color de texto deseado */
+  padding: 20px; /* Espacio alrededor del texto */
+background-size: cover;
+}
+.decoracion2{
+
+background-image: url(https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/4e4293857c03d819e4ae51de1e86d66a.jpg);
+background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semitransparente */
+  background-blend-mode: lighten; /* Mezcla el color de fondo con la imagen de fondo */
+  color: #000; /* Color de texto deseado */
+  padding: 20px; /* Espacio alrededor del texto */
+background-size: cover;
+}
+
+.decoracion3{
+
+background-image: url(https://cdn.shopify.com/s/files/1/0276/2014/7274/articles/tragos-de-jugo-de-limon_599x.jpg?v=1605529690);
+background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semitransparente */
+  background-blend-mode: lighten; /* Mezcla el color de fondo con la imagen de fondo */
+  color: #000; /* Color de texto deseado */
+  padding: 20px; /* Espacio alrededor del texto */
+background-size: cover;
+
+}
+li{
+padding: 5px;
+
+}
+footer{
+
+
+}
