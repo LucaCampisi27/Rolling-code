@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Carrusel de Marcas</title>
+    <!-- Enlaces a los archivos de estilos de Bootstrap y Owl Carousel -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        .owl-carousel .owl-item img {
+            width: auto;
+            /* Ajusta el ancho de las imágenes al tamaño original */
+            max-height: 100px;
+            /* Ajusta la altura máxima de las imágenes para que sean proporcionales */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Carrusel de marcas -->
+    <div class="container mt-4">
+        <div class="owl-carousel">
+            <img src="https://loremflickr.com/g/2000/600/paris" alt="Marca 1">
+            <img src="https://loremflickr.com/g/2000/600/paris" alt="Marca 2">
+            <img src="https://loremflickr.com/g/2000/600/paris" alt="Marca 3">
+            <!-- Agrega más imágenes de marcas aquí -->
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap y Owl Carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        // Inicializar el carrusel de marcas con opciones de configuración
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 1000, // Intervalo de tiempo en milisegundos entre cada movimiento de imagen
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

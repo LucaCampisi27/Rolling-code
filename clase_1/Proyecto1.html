@@ -6,6 +6,14 @@
     <title>Mi Tienda en Línea</title>
     <!-- Enlace a los archivos CSS de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .owl-carousel .owl-item img {
+            width: auto;
+            /* Ajusta el ancho de las imágenes al tamaño original */
+            max-height: 100px;
+            /* Ajusta la altura máxima de las imágenes para que sean proporcionales */
+        }
+    </style>
 </head>
 
 <body>
@@ -13,7 +21,8 @@
         <!-- Navbar superior con logo, opciones de navegación y botones de login y registro -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blood-red-esports-gaming-logo-design-template-ffde75ff6d5fdbc87cb8c0603dfecc76_screen.jpg?ts=1603864071" width="100" height="100" alt="Logo"> Mi Tienda en Línea
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/blood-red-esports-gaming-logo-design-template-ffde75ff6d5fdbc87cb8c0603dfecc76_screen.jpg?ts=1603864071"
+                    width="100" height="100" alt="Logo"> Mi Tienda en Línea
             </a>
             <form class="form-inline my-2 my-lg-0 ml-auto">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
@@ -43,6 +52,35 @@
     </header>
     <main>
         <!-- Contenido principal de la página -->
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <meta charset="utf-8">
+            <title>Carrusel de Marcas</title>
+            <!-- Enlaces a los archivos de estilos de Bootstrap y Owl Carousel -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+            <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        </head>
+
+        <body>
+            <!-- Carrusel de marcas -->
+            <div class="container-fluid mt-4">
+                <div class="owl-carousel">
+                    <img src="https://loremflickr.com/g/2000/600/paris" alt="Marca 1">
+                    <img src="https://loremflickr.com/g/2000/600/paris" alt="Marca 2">
+                    <img src="https://loremflickr.com/g/2000/600/paris" alt="Marca 3">
+                    <!-- Agrega más imágenes de marcas aquí -->
+                </div>
+            </div>
+
+
+        </body>
+
+        </html>
     </main>
     <footer class="bg-light text-center py-3 fixed-bottom">
         <!-- Navbar inferior con opciones de navegación -->
@@ -99,6 +137,34 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Scripts de Bootstrap y Owl Carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        // Inicializar el carrusel de marcas con opciones de configuración
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 1000, // Intervalo de tiempo en milisegundos entre cada movimiento de imagen
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
